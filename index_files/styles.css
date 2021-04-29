@@ -1,0 +1,184 @@
+@media only screen and (max-width: 600px) {
+  h1 {
+    background-color: lightblue;
+    font-size: 2em;
+  }
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin:0;
+  overflow:hidden;
+  outline: black solid 10px;
+  outline-offset: -10px;
+}
+#wrapper{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+}
+#wrapperLeft{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+  flex-grow:1;
+  outline: black solid 10px;
+  outline-offset: -10px;
+
+}
+#wrapperRight{
+  height:100%;
+  position:relative;
+  width:0%;
+  flex-grow:0;
+  padding-top:10px;
+
+}
+
+#stream, #headline, #upnext, #joinChat{
+  /*
+  outline: 1px solid black;
+  */
+}
+#headline, #upnext, #joinChat{
+  width:100%;
+  height:14.2%;
+}
+#stream{
+  width:100%;
+  height:57.1%;
+}
+#stream #player{
+  margin: auto;
+  width:100%;
+  height:100%;
+}
+
+#headline{
+  font-family: sans-serif;
+  display: table;
+  text-align:center;
+}
+#headline h1{
+  display: table-cell;
+  vertical-align: middle;
+}
+#info{
+  display: flex;
+}
+#info div{
+  width:50%;
+  height:100%;
+  text-align:center;
+  display: table;
+}
+#info div p{
+  font-family: sans-serif;
+  line-height:1.2em;
+  display: table-cell;
+  vertical-align: middle;
+}
+#joinChat{
+  text-align:center;
+  display: table;
+  cursor: pointer;
+  background-color: #0000EE;
+}
+#joinChat p{
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+
+.chatContainer{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.chatContainer iframe{
+  width: 100%;
+  height: 100%;
+}
+.gitter-chat-embed-action-bar{
+  visibility: hidden;
+}
+
+#help{
+  position: absolute;
+  top:15;
+  left:15;
+
+}
+#help a{
+  font-family: sans-serif;
+  color:red;
+  font-size: 1.2em;
+}
+
+/*
+#wrapperLeft{
+  width:66%;
+  flex-grow:0.66;
+}
+#wrapperRight{
+  width:33%;
+  flex-grow:0.33;
+}
+
+/*
+.flex-one{
+  flex-grow: 1;
+}
+.flex-two{
+  flex-grow: 2;
+}
+.flex-three{
+  flex-grow: 3;
+}
+.flex-four{
+  flex-grow: 4;
+}
+
+.chatContainer{
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.chatContainer iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.gitter-chat-embed-action-bar{
+  visibility: hidden;
+}
+
+
+#headline{
+  text-align: center;
+  outline: 1px solid black;
+  position:relative;
+}
+#headline h1{
+  font-family: sans-serif;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin: 0;
+  margin-left: -115px;
+  margin-top: -13px;
+
+}
+
+#stream, #headline, #upnext, #joinChat{
+  outline: 1px solid black;
+  height:100%;
+  width:100%;
+}
+*/
